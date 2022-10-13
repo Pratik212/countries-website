@@ -3,6 +3,7 @@ export interface CountryTS {
     nativeName: string,
     population: number,
     region: string,
+    subregion:string,
     capital:string,
     flags:{
         png:string

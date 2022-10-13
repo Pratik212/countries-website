@@ -26,4 +26,24 @@ export const InputArea = styled.section`
     outline: 0;
     font-size: 14px;
   }
+
+  @media(max-width: 1024px) {
+    & {
+      width: auto;
+      padding: 20px;
+    }
+
+    @media(max-width: 767px) {
+      &{
+        flex-direction: column;
+        select {
+          margin-top: 10px;
+          height: 50px;
+          width: max-content;
+        }
+        
+        input {
+          width: 97%}
+      }
+    }
 `

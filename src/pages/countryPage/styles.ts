@@ -12,4 +12,35 @@ export const CountryPage = styled.main`
     .loading {
       min-height: 100vh;
     }
+  
+    .back--button {
+      text-decoration: none;
+      color: #000;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 40px;
+      box-shadow: 1px 1px 1em rgba(0,0,0,0.2);
+    }
+
+  @media(min-width: 768px)  and @media(max-width: 1024px){
+    &{
+      padding: 20px;
+    }
+    .container {
+      width: auto
+    }
+  } 
+  
+  @media(min-width: 767px) {
+    &{
+      height: auto;
+      padding: 20px;
+    }
+    .container {
+      width: auto
+    }
+  }
 `

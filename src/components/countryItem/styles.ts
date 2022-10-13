@@ -19,7 +19,7 @@ export const CountryItem = styled.div`
     }
   
     .data--area {
-      padding: 10px 20px;
+       padding: 10px 20px;
       p {
         font-size: 13px;
         font-weight: 500;
@@ -35,4 +35,12 @@ export const CountryItem = styled.div`
         margin: 10px 0px;
       }
     }
+  
+  @media(max-width:768px){
+    .img--area {
+      img {
+        height: 180px;
+      }
+    }
+  }
 `

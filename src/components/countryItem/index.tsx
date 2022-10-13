@@ -2,14 +2,14 @@ import * as C from './styles';
 import { CountryItemTS} from "../../types/CountryItem";
 import { Link } from 'react-router-dom';
 
-export const CountryItem = ({name, population, region, capital, flag} : CountryItemTS) => {
+export const CountryItem = ({name,capital, population, region,flag} : CountryItemTS) => {
     return(
         <C.CountryItem>
             <Link to={`country/${name}`}>
                 <div className='img--area'>
                     <img src={flag} alt={`Bandeira do Paris: ${name}`}/>
                 </div>
-                <div className="date--area">
+                <div className="data--area">
                     <p className='country--name'>{name}</p>
                     <p>Population: <span>{population}</span></p>
                     <p>Region: <span>{region}</span></p>
